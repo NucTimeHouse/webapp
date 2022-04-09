@@ -116,7 +116,7 @@ public class JavaMail {
     }
     public String getVerifyTemplate(String username, String project, String code){
         StringBuffer sb = new StringBuffer();
-        sb.append("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>EAlbum</title></head><body><h1>尊敬的\n");
+        sb.append("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>时光小屋</title></head><body><h1>尊敬的\n");
         sb.append(username);
         sb.append(": </h1><p>感谢您使用");
         sb.append(project);
