@@ -2,11 +2,7 @@ package cn.episooo.po;
 
 import java.io.Serializable;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/18 23:05
- * @Description：
- */
+
 public class Album implements Serializable {
     private int id;
     private int uid;

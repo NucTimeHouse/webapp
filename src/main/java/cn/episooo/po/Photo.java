@@ -3,11 +3,7 @@ package cn.episooo.po;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/17 0:13
- * @Description：
- */
+
 public class Photo implements Serializable {
     private int id;
     private int uid;

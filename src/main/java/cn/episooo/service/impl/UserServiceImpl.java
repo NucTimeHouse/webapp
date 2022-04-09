@@ -6,11 +6,7 @@ import cn.episooo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/11 0:59
- * @Description：
- */
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired

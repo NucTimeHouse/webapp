@@ -9,11 +9,7 @@ import javax.mail.internet.MimeMessage;
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2019/9/24 20:24
- * @Description：
- */
+
 @Component
 public class JavaMail {
     private static Properties props;

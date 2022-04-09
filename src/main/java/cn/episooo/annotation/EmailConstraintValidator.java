@@ -5,11 +5,7 @@ import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/15 1:57
- * @Description：
- */
+
 public class EmailConstraintValidator implements ConstraintValidator<Email,String> {
 
     @Override

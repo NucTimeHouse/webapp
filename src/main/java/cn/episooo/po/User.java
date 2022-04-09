@@ -6,11 +6,7 @@ import com.sun.istack.NotNull;
 
 import java.io.Serializable;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/11 1:04
- * @Description：
- */
+
 public class User implements Serializable {
 
     private Integer id;

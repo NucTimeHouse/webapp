@@ -14,11 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/18 23:11
- * @Description：
- */
+
 @Controller
 @RequestMapping("/album")
 public class AlbumController  {

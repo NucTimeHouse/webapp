@@ -7,11 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/18 23:04
- * @Description：
- */
+
 @Repository
 public interface AlbumDao {
 

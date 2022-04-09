@@ -18,11 +18,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/17 0:06
- * @Description：
- */
 @Service
 public class PhotoServiceImpl implements PhotoService {
 

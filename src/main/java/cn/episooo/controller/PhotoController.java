@@ -20,11 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/16 20:40
- * @Description：
- */
+
 @Controller
 @RequestMapping("/photo")
 public class PhotoController {

@@ -18,11 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/11 1:01
- * @Description：
- */
+
 @Controller
 @RequestMapping("/user")
 public class UserController {

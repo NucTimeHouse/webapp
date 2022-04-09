@@ -6,11 +6,6 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/11 1:04
- * @Description：
- */
 
 @Repository
 public interface UserDao {

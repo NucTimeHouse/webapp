@@ -8,11 +8,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/16 14:16
- * @Description：
- */
+
 public class ImageUtils {
     private static double MAX_WIDTH = 800;
     private static double MAX_HEIGHT = 600;

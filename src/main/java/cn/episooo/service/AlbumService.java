@@ -4,11 +4,7 @@ import cn.episooo.po.Album;
 
 import java.util.ArrayList;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/18 23:07
- * @Description：
- */
+
 public interface AlbumService {
 
     public ArrayList<Album> getAlbums(int uid);

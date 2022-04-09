@@ -11,11 +11,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Random;
 
-/**
- * @ Author ：Ep
- * @ Date ：Created in 2019/9/10 16:11
- * @ Description：
- */
+
 @Component
 public class VerifyCode {
     private int width = 100;

@@ -10,11 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * @Author ：Ep
- * @Date ：Created in 2020/2/18 23:08
- * @Description：
- */
+
 @Service
 public class AlbumServiceImpl implements AlbumService {
 
