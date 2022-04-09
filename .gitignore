@@ -1,0 +1,4 @@
+./.idea
+.idea/workspace.xml
+/target
+src/main/resources/mail.properties
