@@ -98,7 +98,6 @@ public class UserController {
         //1激活成功 -1激活码错误
         int result = -1;
         User user = (User) session.getAttribute("ruser");
-        System.out.print(session.getAttribute("emailcode"));
         if (session.getAttribute("emailcode").equals(code)) {
             if (user != null) {
                 user.setActive(1);

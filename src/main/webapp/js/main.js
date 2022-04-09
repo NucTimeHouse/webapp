@@ -335,7 +335,6 @@ function addAlbum(){
 function addInputFileListener(){
     $('#fakeInputGroupFile').on('click',function(e){
     //这里需要一个假input作前端样式
-    //触发假input后弹出选择相册模块
     //选择完成后触发真正input框进行选择文件并上传
     //阻止假input触发默认行为（打开文件选择框）
     e.preventDefault();
