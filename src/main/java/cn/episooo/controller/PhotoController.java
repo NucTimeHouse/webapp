@@ -2,6 +2,7 @@ package cn.episooo.controller;
 
 import cn.episooo.po.User;
 import cn.episooo.service.PhotoService;
+import cn.episooo.tool.encrypt.TimeEncryptUntil;
 import cn.episooo.vo.PhotoVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -70,8 +71,12 @@ public class PhotoController {
     @ResponseBody
     public List<PhotoVO> getSharePhotos(@RequestParam(defaultValue = "0") int deleted,
                                         @RequestParam(defaultValue = "-1") int aid,
-                                        @RequestParam(defaultValue = "-1") int userId){
-        return photoService.getPhoto(userId,aid,deleted);
+                                        @RequestParam(defaultValue = "-1") int userId,
+                                        @RequestParam(defaultValue = "token") String token){
+        if( System.currentTimeMillis() - TimeEncryptUntil.timeDecrypt(token) < 1000*60*60*24*7){
+            return photoService.getPhoto(userId,aid,deleted);
+        }
+        throw new RuntimeException("token过期");
     }
     @RequestMapping("/recoverPhoto")
     @ResponseBody

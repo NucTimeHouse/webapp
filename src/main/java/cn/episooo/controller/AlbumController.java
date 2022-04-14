@@ -3,6 +3,7 @@ package cn.episooo.controller;
 import cn.episooo.po.Album;
 import cn.episooo.po.User;
 import cn.episooo.service.AlbumService;
+import cn.episooo.tool.encrypt.TimeEncryptUntil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -44,8 +45,9 @@ public class AlbumController  {
         try {
             User user = (User) session.getAttribute("user");
             Map<String,String> map = new HashMap<String,String>();
-            map.put("uri","http://"+InetAddress.getLocalHost().getHostAddress() + ":8080/photo/share/photos" +
-                    "?deleted="+deleted+"&aid="+aid+"&userId="+user.getId());
+            map.put("uri","http://"+InetAddress.getLocalHost().getHostAddress() + ":8080/share.html" +
+                    "?deleted="+deleted+"&aid="+aid+"&userId="+user.getId()+
+                    "&token="+ TimeEncryptUntil.timeEncrypt(System.currentTimeMillis()));
             return map;
         } catch (UnknownHostException e) {
             e.printStackTrace();
