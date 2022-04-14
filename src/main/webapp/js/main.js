@@ -234,6 +234,7 @@ function getPhotos(){
         }
     })
 }
+
 function getDeletedPhotos(){
     $.ajax({
         url: "photo/getPhotos",
@@ -247,26 +248,7 @@ function getDeletedPhotos(){
         }
     })
 }
-function getPhotosByAid(aid){
-    $.ajax({
-        url: "photo/getPhotos",
-        type: "POST",
-        dataType: "json",
-        data: {
-            aid:aid
-        },
-        success: function (res) {
-            for(var i=0;i<vAlbumListTab.albums.length;i++){
-                if(vAlbumListTab.albums[i].id==aid){
-                    vphotoWithAid.albumName = vAlbumListTab.albums[i].name;
-                    break;
-                }
-            }
-            vphotoWithAid.photosData = res;
-        }
-    })
-    
-}
+
 function getAlbums(){
     $.ajax({
         url: "album/getAlbums",
@@ -348,6 +330,7 @@ addhashListener();
 hideSelect();
 hideAddAlbumModel();
 getPhotos();
+
 getAlbums();
 getDeletedPhotos();
 if(window.location.hash=='' || window.location.hash=='#'){
